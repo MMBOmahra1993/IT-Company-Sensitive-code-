@@ -1,0 +1,13 @@
+def mysterious_function():
+   data = [0b01000011, 0b01101111, 0b01101110, 0b01100111, 0b01110010, 0b01100001, 0b01110100, 0b01110101, 0b01101100, 0b01100001,
+          0b01110100, 0b01101001, 0b01101111, 0b01101110, 0b01110011, 0b00100001, 0b00100000, 0b01011001, 0b01101111, 0b01110101,
+          #... (and so on for the entire message)
+          0b01100001, 0b00101100, 0b00100000, 0b01100010, 0b01110101, 0b01110100, 0b00100000, 0b01101000, 0b01100101, 0b01111001,
+          0b00101100, 0b00100000, 0b01101000, 0b01100101, 0b01110010, 0b01100101, 0b00100111, 0b01110011, 0b00100000, 0b01100001,
+          0b00100000, 0b01100010, 0b01101111, 0b01101110, 0b01110101, 0b01110011, 0b00101110]
+
+   hidden_message = ''.join(chr(i) for i in data)
+   return hidden_message  # The hidden message will be revealed when this function is called
+
+# This line just calls the function but doesn't display anything, keeping the message hidden
+mysterious_function()
